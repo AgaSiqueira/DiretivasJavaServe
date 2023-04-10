@@ -1,0 +1,11 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<%-- Traz o contexto da pagina, seu diretorio, isso ajuda no caso de sub pastas,
+ajudando na navegação dinamica delas sem perder o diretorio independente de qual
+for. Também é uma expression, é expression language,$(pageContext.request.contextPath}
+pode por também <%=request.getContextPath()%> no lugar--%>
+<a href="${pageContext.request.contextPath}/index.jsp">Index</a> |
+<a href="${pageContext.request.contextPath}/pages/page1.jsp">Primeira Pagina</a> |
+<a href="${pageContext.request.contextPath}/pages/page2.jsp">Segunda Pagina</a> |
+<h1>JSP pages</h1>
+
